@@ -46,11 +46,13 @@ body {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .heading__title {
   color: #ffffff;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .heading__title-h1 {
@@ -110,3 +112,24 @@ body {
   }
 }
 
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+.btn-white {
+  background-color: #ffffff;
+  color: #777777;
+}
