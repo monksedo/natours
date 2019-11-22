@@ -2,9 +2,9 @@
 A training project to build a website for a frictional travel touring company.
 
 ## Disclaimer Statement
-This is one of my homework projects in the web frontend design and programing bootcamp, the designer of the website and traing material is one of the best instructors in the business, in this homework assignment, I am the student and I programer to perform all of the coding followed the teaching concept tought in the course.
+This is one of my homework projects in the web frontend design and programing bootcamp, the design of the website and traing material is from one of the best instructors in the business, in this homework assignment, I am the student and a programmer to perform all of the coding followed the teaching concepts tought in the course.
 
-## All Credit goes to the Designer/Instructor/Programer 
+## All Credit go to the Designer/Instructor/Programmer 
 
 Course Designer/Instructor/Developer: Jonas Schmedtmann
 
