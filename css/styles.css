@@ -41,6 +41,13 @@ body {
   height: 35px;
 }
 
+.text-box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .heading__title {
   color: #ffffff;
   text-transform: uppercase;
@@ -51,6 +58,13 @@ body {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
+
+  animation-name: moveFromLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  
+  /* animation-iteration-count: 3; */
+  /* animation-delay: 3s; */
 }
 
 .heading__title-sub {
@@ -58,5 +72,41 @@ body {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 17.3px;
+
+  animation-name: moveFromRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
