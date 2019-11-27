@@ -15,7 +15,7 @@ I took web frontend design and development training, I have completed the course
 
 This is very common when you are learning anything, the first reading of a book does not give you a full understanding, you only truly gain a deep understanding the second time or the third time, depend on the complexity of the subject that you are learning. That is how to master anything, I did not invent this idea, I had a chance to work for the group surgeons for over 5 years.
 
-This is how doctor become doctor because they are being forced to go over their learning materials, a specialist practice, or a technique thousands of times before they can touch a tool or a patent.
+This is how an intern doctor becomes a certified doctor because they are being forced to go over their learning materials, a specialist practice, or a technique thousands of times before they can touch a tool or a patent.
 
 ## Code Snippet
 
