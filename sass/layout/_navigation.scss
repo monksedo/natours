@@ -1,9 +1,10 @@
 .navigation {
-
+  // Hide the checkbox icon
   &__checkbox {
     display: none;
   }
 
+  // Nav button declaration block
   &__button {
     background-color: $white;
     height: 7rem;
@@ -14,8 +15,11 @@
     border-radius: 50%;
     z-index: 20;
     box-shadow: 0 1rem 3rem rgba($black, .1);
+    text-align: center;
+    cursor: pointer;
   }
 
+  // Full screen navigation background declaration block
   &__background {
     height: 6rem;
     width: 6rem;
@@ -26,8 +30,6 @@
     background-image: radial-gradient($green-light, $green-dark);
     z-index: 10;
     transition: transform .8s cubic-bezier(0.645, 0.045, 0.355, 1);
-
-    // transform: scale(90);
   }
 
   // Navigation links animation
@@ -87,6 +89,7 @@
     margin: 1rem;
   }
 
+  // Checkbox & background animation
   &__checkbox:checked ~ &__background {
     transform: scale(90);
   }
@@ -95,6 +98,53 @@
     // transform: scale(90);
     opacity: 1;
     width: 100%;
+  }
+  
+  // Icon declaration block
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $gray-dark;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s;
+    }
+
+    &::before { top: -.8rem }
+    &::after { top: .8rem }
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
   }
   
 }
