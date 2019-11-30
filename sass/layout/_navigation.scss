@@ -73,6 +73,8 @@
     opacity: 0;
     width: 0;
     transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    
   }
 
   // Navigation List item declaration 
@@ -83,6 +85,7 @@
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
+    // opacity: 0;
   }
 
   &__item {
@@ -146,5 +149,6 @@
     top: 0;
     transform: rotate(-135deg);
   }
+
   
 }

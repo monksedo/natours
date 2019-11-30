@@ -4,8 +4,9 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: $gray-dark;
-  padding: 3rem;
+  
 }
+
 
 .header__title {
   color: $white;
@@ -24,6 +25,12 @@ body {
     
     /* animation-iteration-count: 3; */
     /* animation-delay: 3s; */
+
+    // Media query
+    @include respond(phone) {
+      letter-spacing: 2rem;
+      font-size: 5rem;
+    }
   }
   
   &-sub {
@@ -35,11 +42,17 @@ body {
     animation-name: moveFromRight;
     animation-duration: 2s;
     animation-timing-function: ease-out;
+
+    // Media query
+    @include respond(phone) {
+      letter-spacing: .8rem;
+    }
   }
 }
 
 .heading-h2 {
   font-size: 3rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 3rem;
   font-weight: 700;
@@ -47,7 +60,6 @@ body {
   background-image: linear-gradient(to right, $green-light, $green-dark);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: 2px;
   transition: all .2s;
 
   &:hover {
