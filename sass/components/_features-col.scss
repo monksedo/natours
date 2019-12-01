@@ -1,10 +1,9 @@
 // Feature Columns
 .section__features {
   &-col {
-    max-width: 30rem;
+    width: 100%;
     font-size: 1.5rem;
     background-color: rgba($white, .8);
-    margin: 3rem 2rem;
     padding: 3rem 1rem;
     box-shadow: 0 1.5rem 4rem rgba($black, .2);
     border-radius: 3px;
