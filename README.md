@@ -11,7 +11,7 @@ Course Designer/Instructor/Developer: Jonas Schmedtmann
 Student/Programmer: Chris Thanh Nguyen
 
 ### What I can do after this training?
-After finish the training course, I am able to understand all the concepts and now able to design and code very high quality and most beautifull web/app frontend, and I am confident to produce many challenging realworld frontend project for business organizations or personal website. 
+After completed the training course, I am able to understand all the concepts and now able to design and code very high quality and most beautifull web/app frontend, and I am confident to produce many challenging realworld frontend project for business organizations or personal website. 
 
 ## View the website
 [Click to run](https://monksedo.github.io/natours/)
