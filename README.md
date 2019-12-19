@@ -10,15 +10,24 @@ Course Designer/Instructor/Developer: Jonas Schmedtmann
 
 Student/Programmer: Chris Thanh Nguyen
 
-## Hint on learning how to code 
-I took web frontend design and development training, I have completed the course 2 times, meaning I have finished the entire course, coded all of the projects, then take the course again and code all of the projects line by line, then now at the third time on recently, Yes I am rewriting all the code from scratch again. This process helps me because each time I review and recode the projects, I have gained a deep understanding at a much-advanced level on many concepts that I have missed the first time.
+### What I can do after this training?
+After finish the training course, I am able to understand all the concepts and now able to design and code very high quality and most beatifull web/app front and fill confident to produce many challenging realworld  frontend projects.
 
-This is very common when you are learning anything, the first reading of a book does not give you a full understanding, you only truly gain a deep understanding the second time or the third time, depend on the complexity of the subject that you are learning. That is how to master anything, I did not invent this idea, I had a chance to work for the group surgeons for over 5 years.
+## View the website
+[Click to run](https://monksedo.github.io/natours/)
 
-This is how an intern doctor becomes a certified doctor because they are being forced to go over their learning materials, a specialist practice, or a technique thousands of times before they can touch a tool or a patent.
+## Screenshot
+### Home page
+![](img/natour01.png)
+### About page
+![](img/natour02.png)
+### Features page
+![](img/natour03.png)
+### Tour booking page
+![](img/natour04.png)
 
-## Code Snippet
 
-## Screenshot 
+
+
 
 

@@ -24,19 +24,19 @@ html {
   font-size: 62.5%;
 }
 
-@media (min-width: 112.5em) {
+@media only screen and (min-width: 112.5em) {
   html {
     font-size: 75%;
   }
 }
 
-@media (max-width: 75em) {
+@media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
 }
 
-@media (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
   html {
     font-size: 50%;
   }
@@ -48,7 +48,7 @@ body {
   padding: 3rem;
 }
 
-@media (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
   body {
     padding: 0;
   }
@@ -183,7 +183,7 @@ body {
   /* animation-delay: 3s; */
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .header__title-h1 {
     letter-spacing: 2rem;
     font-size: 5rem;
@@ -203,7 +203,7 @@ body {
           animation-timing-function: ease-out;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .header__title-sub {
     letter-spacing: .8rem;
   }
@@ -453,7 +453,7 @@ body {
   left: 0;
   width: 100%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: 3px;
 }
 
@@ -596,7 +596,7 @@ body {
   margin-bottom: 3rem;
 }
 
-@media (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
   .card {
     height: auto;
     border-radius: 3px;
@@ -651,7 +651,7 @@ body {
           transform: skewX(-12deg);
 }
 
-@media (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
   .story {
     width: 100%;
     padding: 4rem;
@@ -659,7 +659,7 @@ body {
   }
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .story {
     -webkit-transform: skewX(0);
             transform: skewX(0);
@@ -684,7 +684,7 @@ body {
   text-transform: uppercase;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .story__shape {
     -webkit-transform: skewX(0);
             transform: skewX(0);
@@ -704,7 +704,7 @@ body {
           transform: skewX(12deg);
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .story__text {
     -webkit-transform: skewX(0);
             transform: skewX(0);
@@ -813,7 +813,7 @@ body {
   display: inline-block;
 }
 
-@media (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
   .form__radio-group {
     width: 100%;
     margin-bottom: 2rem;
@@ -869,12 +869,22 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 30;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all .3s;
   transition: all .3s;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+  .popup {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .popup__content {
@@ -963,10 +973,17 @@ body {
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 125em) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(84, 235, 134, 0.8)), to(rgba(15, 139, 57, 0.8))), url("../img/hero.jpg");
+    background-image: linear-gradient(to right bottom, rgba(84, 235, 134, 0.8), rgba(15, 139, 57, 0.8)), url("../img/hero.jpg");
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
   .header {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
@@ -1216,7 +1233,7 @@ body {
   padding: 0 2rem;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .section__about {
     margin-bottom: 30rem;
   }
@@ -1231,7 +1248,7 @@ body {
           justify-content: space-evenly;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .section__about-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1249,7 +1266,7 @@ body {
   padding: 2rem;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .section__about-col {
     margin: 2rem;
     padding: 2rem;
@@ -1267,7 +1284,7 @@ body {
   margin-top: -15rem;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .section__features {
     -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
             clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
@@ -1285,7 +1302,7 @@ body {
   padding: 0 2rem;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .section__features-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1321,7 +1338,7 @@ body {
           justify-content: space-evenly;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .section__tour-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

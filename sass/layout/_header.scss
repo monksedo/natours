@@ -6,8 +6,16 @@
   background-size: cover;
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+      only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), 
+      only screen and (min-width: 125em) {
+    background-image: linear-gradient(to right bottom, rgba($green-light, 0.8),
+      rgba($green-dark, 0.8)), url("../img/hero.jpg");
+  }
+    
   // Media query
   @include respond(phone) {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
