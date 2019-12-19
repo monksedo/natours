@@ -2,7 +2,7 @@
 A training project to build a website for a frictional travel touring company.
 
 ## Credited Statement
-This is one of my homework projects in the web frontend design and programing bootcamp, the design of the website and traing material is from one of the best instructors in the business, in this homework assignment, I am the student and a programmer to perform all of the coding followed the teaching concepts tought in the course.
+This is one of my homework projects in the web frontend design and programing bootcamp, the design of the website and training material is from one of the best instructors in the business, in this homework assignment, I am the student and a programmer to perform all of the coding followed the teaching concepts tought in the course.
 
 ### Designer/Instructor/Programmer
 
